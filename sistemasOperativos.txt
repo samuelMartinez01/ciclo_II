@@ -1,0 +1,30 @@
+------------------LOS SISTEMAS OPERATIVOS--------------------
+QUE ES EL SISTEMA OPERATIVO?
+Es un conjunto de programas que se integran con el hardware para facilitar al usuario, el aprovechamiento de los recursos disponibles.
+
+CUALES SON LAS CARACTERÍSTICAS PRINCIPALES?
+
+1. Guían a la computadora en el cumplimiento de sus tareas.
+2. Auxilian a los programas y programadores en funciones de apoyo.
+3. Incrementan la utilidad del hardware.
+4. Administran los recursos de un sistema de procesamiento de datos.
+
+COMO SE REALIZA EL PROCESO DE CARGA DEL SISTEMA OPERATIVO?
+Cuando se enciende el ordenador , pasa por varias etapas antes de poder ser utilizado:
+
+             1o ->Autocomprobacion --- Se identifican los dispositivos físicamente conectados
+                                    -- Cantidad de memoria disponible.
+                                    -- Si esta en buen estado
+                                       Esto es realizado por POST (Power-On Self Test) que esta almacenado en la ROM.
+                                                           
+             2o ->Busqueda ----------- Busqueda de un programa de inicio en la computadora (BootLoader GRUB(Linux) o Windows Boot Mánager).
+                                    -- Verifica si un sistema operativo esta presente.
+                                    -- Inicia proceso de carga
+             
+             3o ->Transfiere --------- Transfiere el control a una porción del sistema operativo para finalizar la carga.
+             
+Que es el GRUB (GRand Unified Bootloader)?
+Es un cargador de arranque (bootloader) bastante utilizado en sistemas basados en Linux. Es responsable de cargar el sistema operativo en la memoria y transferirle el control durante el proceso de arranque. Su objetivo es ofrecer flexibilidad para que el usuario pueda elegir qué sistema operativo o configuración desea iniciar.
+
+TIPOS DE SISTEMAS OPERATIVOS:
+
