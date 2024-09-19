@@ -95,17 +95,64 @@ LINEAS TIPICAS DEL BUS DE CONTROL:
            
 PROCESOS DE TRANSFERENCIA
 
-Escritura E/S:
+Escritura Y lectura E/S:
  1. LLama al Bus request
  2. Arbitrador concede el bus (Bus Grant)
- 3. Situa la direccion el bus de direcciones.
+ 3. Situa la direccion o puerto en el bus de direcciones.
  4. Situa el dato a transferir en el bus de datos
- 5. Activa la linea I/O Write del bus de control
+ 5. Activa la linea I/O Write o read del bus de control
  6. El destinatario recibe el dato (Transfer ACK)
  7. Deja libre el bus para ser usado por otro modulo.
  
- Escritura E/S:
- 1. 
+BUS MASTER: Modulo permite a un dispositivo conectado que inicie una transferencia o transaccion.
+BUS SLAVE: Es el modulo direccionado por el bus master, responde a las solicitudes de un bus master.
+ARBITRADOR: Circuito que recoge las peticiones para tomar el control del bus y decide quien debe tomarlo en cada momento.
+
+==============================DIFERENTES MANERAS DE CLASIFICAR LOS METODOS DE TRANSMISION DE DATOS========================
+=========================
+TIPO!!!!
+CONEXIONES MULTIPLEXADOS: permite multiples señales o flujos de informacion se transmitan simultaneamente a traves de un unico medio de transmision. Los multiplexores combinan las señales optimizando el ancho de banda disponible.
+CONEXIONES DEDICADAS: Son conexiones que estan reservadas exclusivamente para un solo usuario o identidad.
+==========================================================================================================
+METODO DE ARBITRAJE!!!!
+CENTRALIZADO: Una unica entidad o controlador es responsable de gestionar el acceso al recurso.
+DISTRIBUIDO: Multiples entidades o nodos en la red toman desiciones sobre el acceso al recurso.
+==============================================================================================
+TEMPORIZACION!!!!
+SINCRONO: Las operaciones  se realizan en un marco de tiempo definido, donde todos los compontntes estan sincronizados mediante una señal de reloj.
+ASINCRONO: Los datos se envian de manera independiente, generalmente un byte a la vez, sin necesidad de una señalde reloj constante.
+====================================================================================================================================
+ANCHURA DEL BUS(Cantidadde bits que pueden ser transmitidos simultaneamente o en un solo ciclo)!!!!!!!!!!!!!!
+DIRECCION:Especifica las direccion de memoria a la que se desea acceder.
+DATOS: Transporta los datos entre los compoentes del sistema
+==============================================================
+ANCHO DE BANDA:Cantidad maxima de datos que se pueden transmitir a traves de una conexxion de red en un periodo de tiempo determinado.
+              (Señales analogicas): Extension de frecuencias en la que se concentra la mayor  potencia de la señal, medida en hercios.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
 
  
