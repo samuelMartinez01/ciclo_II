@@ -128,6 +128,61 @@ DATOS: Transporta los datos entre los compoentes del sistema
 ==============================================================
 ANCHO DE BANDA:Cantidad maxima de datos que se pueden transmitir a traves de una conexxion de red en un periodo de tiempo determinado.
               (Señales analogicas): Extension de frecuencias en la que se concentra la mayor  potencia de la señal, medida en hercios.
+            
+            
+SOLUCION DEL CUELLO DE BOTELLA:
+Enlazar el adaptador grafico y ortros periericos directamente al micro.
+
+VLB --> (Video Electronics Standar Association)
+PCI --> (Periphecal Component Interconnect) 32 a 65 bits, de 20 a 66MHZ, con tarjetas que trabajen a diferentes voltajes.
+
+BUS XT --> Sincrono, 8bits datos, 20bits direcciones, reloj 4.77MHZ
+BUS AT -->Asincrono 16bits datos, 24bits direcciones, reloj 8.33 MHZ
+BUS MCA: reloj 10MHZ
+BUS PCI: 33/64MHZ, 32/64 bits de datos
+
+
+MEtodos de coexion de un dispositovo al bus local del microproceador:
+Conexion directa: Dependiente del micro y solo permite un dispositivo local, ejemplo VLB tipo A
+Conexion mediante buffer: Mejora la conexion directa al estar electricamnte aislado, permitiendo hasta 3 dispositivos. ejemplo: VLB tipoB
+Conexion con filososifia de estacion de trabajo: Cache L2 y un puente para adaptar velocidades de transferencia, independiente del micro, ejemplo PCI
+
+TIPOS DE BUSES EN UNA PC:
+ - Buses del microprocesador.
+ - Buses de la memoria.
+ - Buses del sistema.
+ 
+ BUS DE DATOS: lleva info  Bytes desde y hacia el micro, por eso son bidireccionales.
+ BUS DE DIRECCIONES: Permite al micro seleccionar posiciones de memoria para la lectura  y escritura, unidireccional.
+ BUS DE CONTROL: Señales individuales con las que el micro controla los dispositivos externos y mediantes las cuales se pone de acuerdo con ellos para realizar tranferencias de informacion.
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WAIT STATE --> Señal de estado de espera
+
+
+
 
 
 
