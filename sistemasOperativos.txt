@@ -12,19 +12,85 @@ CUALES SON LAS CARACTERÍSTICAS PRINCIPALES?
 COMO SE REALIZA EL PROCESO DE CARGA DEL SISTEMA OPERATIVO?
 Cuando se enciende el ordenador , pasa por varias etapas antes de poder ser utilizado:
 
-             1o ->Autocomprobacion --- Se identifican los dispositivos físicamente conectados
+             1 ->Autocomprobacion --- Se identifican los dispositivos físicamente conectados
                                     -- Cantidad de memoria disponible.
                                     -- Si esta en buen estado
-                                       Esto es realizado por POST (Power-On Self Test) que esta almacenado en la ROM.
+                                    -- Esto es realizado por POST (Power-On Self Test) que esta almacenado en la ROM.
                                                            
-             2o ->Busqueda ----------- Busqueda de un programa de inicio en la computadora (BootLoader GRUB(Linux) o Windows Boot Mánager).
+             2 ->Busqueda ----------- Busqueda de un programa de inicio en la computadora (BootLoader GRUB(Linux) o Windows Boot Mánager).
                                     -- Verifica si un sistema operativo esta presente.
                                     -- Inicia proceso de carga
              
-             3o ->Transfiere --------- Transfiere el control a una porción del sistema operativo para finalizar la carga.
+             3 ->Transfiere --------- Transfiere el control a una porción del sistema operativo para finalizar la carga.
              
 Que es el GRUB (GRand Unified Bootloader)?
 Es un cargador de arranque (bootloader) bastante utilizado en sistemas basados en Linux. Es responsable de cargar el sistema operativo en la memoria y transferirle el control durante el proceso de arranque. Su objetivo es ofrecer flexibilidad para que el usuario pueda elegir qué sistema operativo o configuración desea iniciar.
 
 TIPOS DE SISTEMAS OPERATIVOS:
+  1. SISTEMA MONOSUSUARIO: Atiende solo a un usuario en la sesion de trabajo.
+  2. SISTEMA MULTIUSUARIO: Atienden a los procesos de muchos usuarios simultaneamente.
+  3. SISTEMA MULTITAREA: Tiene la capacidad de atender multiples tareas simultaneamente, no nesesariamente multiusuario.
+  
+  Hardware --> Sistema Operativo --> Programas de aplicacion --> Usuarios
+  
+  
+  4.. FUNCIONES DE UN SISTEMA OPERATIVO
+  - Interpreta los comandos del operador
+  - Programa y desarrolla cronologicamente las funciones de entrada y salida
+  - Asigna almacenamiento y otros recursos en un medio de multiprogramacion
+  - Asigna dispositivos de entrada y salida a los archvios logicos que hacen referencia los programas.
+  - Administra la forma en como se almacenan y recuperan los datos
+  - Corre simultaneamente muchos programas
+  - Asigna tareas a los pricesadores en un medio de multiprocesamiento.
+  
+  5.. COMPONENTES BASICOS DE UN SISTEMA OPERATIVO
+  - Sistema operativo Unix --------> (Shell(Nucleo o Kernel))
+  
+  5.1.. EL KERNEL  --> Es el nucleo del sistema operativo, actua como el interfaz con el hardware del sistema, realiza funciones de mas bajo nivel:
+                                                                                              1. MAnejo y control de dispositivos fisicos
+                                                                                              2. Control de interrupciones
+                                                                                              3. Control de procesos y tiempo
+                                                                                              4. Control de ficheros
+                                                                                              5. Control de memoria
+                                                                                              
+5.2 EL SHELL --> Es la interfaz del sistema operativo con los usuarios del mismo. Actua como interprete de comandos
+
+6. CLASIFICACION DE LOS COMANDOS DE SO
+ .... Comandos internos --> Comandos que se cargan en memoria mientras la computadora esta encendida.
+ .... Comandos externos --> Comandos que permanecen en el medio de almacnamieto cuando ha finalizado la carga del sistema.
+ 
+
+QUE ES UN BUS?
+- COnjunto de lineas  sobre una placa de metal impreso.
+ QUE ES UN BUS NORMALIZADO?
+- Es un sistema de interconexion estandarizado que permite la comunicacion entre distintos componentes de hardware, siguiendo reglas predefinidas para asegurar interoperabilidad y compatibilidad.
+
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
