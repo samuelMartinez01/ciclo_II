@@ -62,8 +62,51 @@ TIPOS DE SISTEMAS OPERATIVOS:
 
 QUE ES UN BUS?
 - COnjunto de lineas  sobre una placa de metal impreso.
+
  QUE ES UN BUS NORMALIZADO?
 - Es un sistema de interconexion estandarizado que permite la comunicacion entre distintos componentes de hardware, siguiendo reglas predefinidas para asegurar interoperabilidad y compatibilidad.
+Es un medio compartido entre distintos componentes de un sistema informatico
+
+COMPONENTES CONECTADOS AL BUS --> 
+                              --> CPU
+                              --> Moudulos E/S --> Teclado, Monitor, Impresora, HD(Hard DIsk)
+
+BUS MASTER --> Controla el acceso del bus, es el encargado de decidir que dispositivo puede usar el bus en cada momento
+MECANISMOS DE CONTIENDA --> Se utilizan para resolver las contiendas  y asegurar que los dispositivos accedan al bus de manera ordenada.
+
+LINEAS DEL BUS:
+1. Direcciones: Estas lineas llevan la info sobre las direcciones de memoria o dispositovos especificos con los que la cpu quiere comunicarse.
+2. Datos: Por estas lineas se transfieren los datos entre la CPU, la memoria y los dispositivos E/S.
+3. Control: Se utilizan para gestionar y controlar las operaciones  que se realizan.
+4. Sincronizacion: Sincronizan  las operaciones entre los diferentes dispositivos conectados al bus, para que trabajen de manera coordinada.
+
+LINEAS TIPICAS DEL BUS DE CONTROL:
+ -- Escritura de memoria 
+  -- Lectura de memoria
+   -- Escritura E/S
+    -- Lectura E/S
+     -- Transferencia reconocida
+      -- Peticion del bus
+       -- Cesion del bus
+        -- Peticion de interrupcion
+         -- Interrupcion reconocida
+          -- Reloj
+           -- Inicio
+           
+PROCESOS DE TRANSFERENCIA
+
+Escritura E/S:
+ 1. LLama al Bus request
+ 2. Arbitrador concede el bus (Bus Grant)
+ 3. Situa la direccion el bus de direcciones.
+ 4. Situa el dato a transferir en el bus de datos
+ 5. Activa la linea I/O Write del bus de control
+ 6. El destinatario recibe el dato (Transfer ACK)
+ 7. Deja libre el bus para ser usado por otro modulo.
+ 
+ Escritura E/S:
+ 1. 
+ 
 
  
   
